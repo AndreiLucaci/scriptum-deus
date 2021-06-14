@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/scriptum-deus/static/css/main.8c8b27cf.chunk.css",
+    "main.js": "/scriptum-deus/static/js/main.10059397.chunk.js",
+    "main.js.map": "/scriptum-deus/static/js/main.10059397.chunk.js.map",
+    "runtime-main.js": "/scriptum-deus/static/js/runtime-main.e4f03754.js",
+    "runtime-main.js.map": "/scriptum-deus/static/js/runtime-main.e4f03754.js.map",
+    "static/js/2.0980da38.chunk.js": "/scriptum-deus/static/js/2.0980da38.chunk.js",
+    "static/js/2.0980da38.chunk.js.map": "/scriptum-deus/static/js/2.0980da38.chunk.js.map",
+    "static/js/3.74a7ee56.chunk.js": "/scriptum-deus/static/js/3.74a7ee56.chunk.js",
+    "static/js/3.74a7ee56.chunk.js.map": "/scriptum-deus/static/js/3.74a7ee56.chunk.js.map",
+    "index.html": "/scriptum-deus/index.html",
+    "static/css/main.8c8b27cf.chunk.css.map": "/scriptum-deus/static/css/main.8c8b27cf.chunk.css.map",
+    "static/js/2.0980da38.chunk.js.LICENSE.txt": "/scriptum-deus/static/js/2.0980da38.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/scriptum-deus/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e4f03754.js",
+    "static/js/2.0980da38.chunk.js",
+    "static/css/main.8c8b27cf.chunk.css",
+    "static/js/main.10059397.chunk.js"
+  ]
+}
