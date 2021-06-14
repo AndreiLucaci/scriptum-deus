@@ -1,26 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { FC } from "react";
+import "./App.css";
+import { Provider } from "react-redux";
+import { Typography, Layout } from "antd";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import { store } from "./redux";
+
+const { Title } = Typography;
+const { Content, Header, Footer, Sider } = Layout;
+
+const App: FC = () => (
+  <Provider store={store}>
+    <Layout>
+      <Sider className="sider">Sider</Sider>
+      <Layout>
+        <Header className="header">
+          <Title> Scriptum Deus </Title>
+        </Header>
+        <Content style={{ textAlign: "center" }}>
+          <Title>Hello World!</Title>
+        </Content>
+        <Footer>Footer</Footer>
+      </Layout>
+    </Layout>
+  </Provider>
+);
 
 export default App;
