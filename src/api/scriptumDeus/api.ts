@@ -11,18 +11,12 @@
  * Do not edit the class manually.
  */
 
+import globalAxios, { AxiosInstance, AxiosPromise } from "axios";
 import * as globalImportUrl from "url";
-import { Configuration } from "./configuration";
-import globalAxios, { AxiosPromise, AxiosInstance } from "axios";
 // Some imports not used depending on template conditions
 // @ts-ignore
-import {
-  BASE_PATH,
-  COLLECTION_FORMATS,
-  RequestArgs,
-  BaseAPI,
-  RequiredError,
-} from "./base";
+import { BaseAPI, BASE_PATH, RequestArgs } from "./base";
+import { Configuration } from "./configuration";
 
 /**
  *

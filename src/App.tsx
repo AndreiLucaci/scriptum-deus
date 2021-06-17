@@ -1,11 +1,10 @@
+import { Layout, Typography } from "antd";
 import React, { FC } from "react";
+import { QueryClient, QueryClientProvider } from "react-query";
 import "./App.css";
-import { QueryClient, QueryClientProvider, useQuery } from "react-query";
-import { Typography, Layout } from "antd";
-
 import { ForToday } from "./components";
 
-const queryClient = new QueryClient();
+const queryClient = new QueryClient({});
 // import { store } from "./redux";
 
 const { Title } = Typography;

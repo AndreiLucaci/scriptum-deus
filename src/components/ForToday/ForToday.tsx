@@ -1,10 +1,8 @@
-import React, { FC, useState, useEffect, Component } from "react";
+import { Col, Row, Typography } from "antd";
+import React, { FC, useEffect, useState } from "react";
 import { useQuery } from "react-query";
-import { Typography, Row, Col } from "antd";
-
-import { BibleApi, scriptumDeusApi, DailyResponse } from "../../api";
+import { BibleApi, scriptumDeusApi } from "../../api";
 import { DayResponse } from "../../types";
-
 import { BiblePassage } from "../BiblePassage";
 
 const { Title } = Typography;
