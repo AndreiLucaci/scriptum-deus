@@ -1,4 +1,10 @@
-import { createStore } from "redux";
+import { createStore, combineReducers } from "redux";
 import { bibleReducer } from "./reducers";
 
-export const store = createStore(bibleReducer);
+const reducers = {
+  bible: bibleReducer,
+};
+
+const combinedReducers = combineReducers(reducers);
+
+export const store = createStore(combinedReducers);

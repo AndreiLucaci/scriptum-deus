@@ -1,28 +1,34 @@
 import React, { FC } from "react";
 import "./App.css";
-import { Provider } from "react-redux";
+import { QueryClient, QueryClientProvider, useQuery } from "react-query";
 import { Typography, Layout } from "antd";
 
-import { store } from "./redux";
+import { ForToday } from "./components";
+
+const queryClient = new QueryClient();
+// import { store } from "./redux";
 
 const { Title } = Typography;
 const { Content, Header, Footer, Sider } = Layout;
 
 const App: FC = () => (
-  <Provider store={store}>
+  // <Provider store={store}>
+  <QueryClientProvider client={queryClient}>
     <Layout>
       <Sider className="sider">Sider</Sider>
       <Layout>
         <Header className="header">
           <Title> Scriptum Deus </Title>
         </Header>
-        <Content style={{ textAlign: "center" }}>
-          <Title>Hello World!</Title>
+        <Content style={{ textAlign: "center", width: "90%" }}>
+          <ForToday></ForToday>
         </Content>
         <Footer>Footer</Footer>
       </Layout>
     </Layout>
-  </Provider>
+  </QueryClientProvider>
+
+  // </Provider>
 );
 
 export default App;
